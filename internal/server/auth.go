@@ -35,9 +35,7 @@ func (s *Server) ValidateToken(next http.Handler) http.Handler {
 		}
 
 		request = request.WithContext(context.WithValue(request.Context(), userID, userId))
-		//logger.Info("test in WithContext", userId)
 
 		next.ServeHTTP(writer, request)
 	})
-
 }

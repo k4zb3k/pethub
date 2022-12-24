@@ -36,6 +36,6 @@ type Ads struct {
 	TypeId      int    `json:"type_id" db:"type_id"`
 	PetId       int    `json:"pet_id"  db:"pet_id"`
 	CityId      int    `json:"city_id" db:"city_id"`
-	Reward      int    `json:"reward" db:"reward"`
-	Active      bool   `json:"active" db:"is_active"`
+	Reward      int    `json:"reward"  db:"reward"`
+	Active      bool   `json:"active"  db:"is_active"`
 }

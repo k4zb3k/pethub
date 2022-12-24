@@ -8,7 +8,6 @@ import (
 	"github.com/k4zb3k/pethub/internal/server"
 	"github.com/k4zb3k/pethub/internal/services"
 	"github.com/k4zb3k/pethub/pkg/logging"
-	"log"
 	"net"
 	"net/http"
 )
@@ -51,6 +50,5 @@ func execute() error {
 		logger.Error("error in ListenAndServe", err)
 	}
 
-	log.Println("Hello")
 	return nil
 }
